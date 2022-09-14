@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HJSG_PJT01</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- 파비콘 -->
+  <link rel="icon" href="./fav/favicon-16x16.png">
+</head>
+<style>
+  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+  @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR&display=swap');
+  * {
+    font-family: 'Do Hyeon', sans-serif;
+    }
+  div input[type='checkbox']:checked {
+    background-color: #FFBAB9;
+    border-color: #FFBAB9;
+  }
+</style>
+<body>
+  <!-- 네비게이션 바 -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top opacity-75" style="background-color: #FFBAB9;">
+    <div class="container-fluid">
+      <!-- 로고 -->
+      <a class="navbar-brand" href="./index.html"><img class='logo' src="./images/logo.png" width="100"></a>
+      <!-- 토글 버튼 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" href="./03_community.html">Community</a>
+        </li>
+        <li class="nav-item">
+          <!-- 로그인 -->
+          <a class="nav-link fw-bold" href="#exampleModal" data-bs-toggle="modal">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- 로그인 모달 -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: gray;"><i class="bi bi-lock-fill" style="color: #ffbab9;"></i> Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label" style="color: gray;"><i class="bi bi-envelope" style="color: #ffbab9;"></i> Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label" style="color: gray;"><i class="bi bi-key" style="color: #ffbab9;"></i> Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #ffdd7c; border-style: none;">Close</button>
+        <button type="button" class="btn btn-primary" style="background-color: #ffbab9; border-style: none;">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- 캐로셀 -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/ban1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/ban2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/ban3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- 섹션 -->
+  <section class="container mb-4">
+    <h2 class="text-center fw-bold my-5" style="color: #FFc799; letter-spacing: 3px; letter-spacing: 3px; font-size: 3rem;">Boxoffice</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 shadow-sm" style="border-color: #ffdd7c;">
+          <a href="./05_쇼생크.html">
+            <img src="./images/movie1.jpg" class="card-img-top" alt="쇼생크탈출">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">쇼생크 탈출</h5>
+            <p class="card-text" style="color: gray; font-size: 0.9rem;">1947년 은행 부지점장으로 일하며 승승장구하던 앤디 듀프레인은 아내와 아내의 프로골퍼 정부를 살해했다는 누명을 뒤집어쓰고, 2번의 종신형을 선고받아 쇼생크 교도소에 갇힌다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm" style="border-color: #ffdd7c;">
+          <a href="./05_쇼생크.html">
+            <img src="./images/movie2.jpg" class="card-img-top" alt="죽은시인의사회">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">죽은 시인의 사회</h5>
+            <p class="card-text" style="color: gray; font-size: 0.9rem;">1959년을 배경으로 보수적인 남자사립학교인 웰튼 아카데미(Welton Academy)에 국어 선생님이 부임하는데, 시와 문학을 가르치면서 틀에 박힌 삶을 강요받는 학생들에게 영감을 준다는 이야기이다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm" style="border-color: #ffdd7c;">
+          <a href="./05_쇼생크.html">
+            <img src="./images/movie3.jpg" class="card-img-top" alt="다크나이트라이즈">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">다크 나이트 라이즈</h5>
+            <p class="card-text" style="color: gray; font-size: 0.9rem;">배트맨이 핵폭발로 사라지고 폭스, 고든, 블레이크, 알프레드만 참석해 시신 없는 묘비를 웨인가 묘비에 세운다. 브루스의 재산은 알프레드에게 상속되고 부동산은 고담시에 기증되고 저택은 고아원으로 활용되고 고담시는 배트맨의 동상을 세워 그를 영웅으로 기린다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm" style="border-color: #ffdd7c;">
+          <a href="./05_쇼생크.html">
+            <img src="./images/movie4.jpg" class="card-img-top" alt="그랜드부다페스트호텔">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">그랜드 부다페스트 호텔</h5>
+            <p class="card-text" style="color: gray; font-size: 0.9rem;">1932년 세계대전이 한창이던 어느 날, 세계 최고 부호 마담 D.가 ‘그랜드 부다페스트 호텔’에 다녀간 지 얼마 지나지 않아 의문의 살인을 당한다. 그녀는 유언을 통해 가문 대대로 내려오던 명화 '사과를 든 소년'을 전설적인 호텔 지배인이자 연인 구스타브 앞으로 남긴다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm" style="border-color: #ffdd7c;">
+          <a href="./05_쇼생크.html">
+            <img src="./images/movie5.jpg" class="card-img-top" alt="her그녀">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">그녀, her</h5>
+            <p class="card-text" style="color: gray; font-size: 0.9rem;">다른 사람의 편지를 대신 써주는 대필 작가 테오도르 톰블리가 인공지능 운영체제 OS1인 사만다와 사랑에 빠진다</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm" style="border-color: #ffdd7c;">
+          <a href="./05_쇼생크.html">
+            <img src="./images/movie6.jpg" class="card-img-top" alt="위대한쇼맨">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">위대한 쇼맨</h5>
+            <p class="card-text" style="color: gray; font-size: 0.9rem;">P.T 바넘은 어린 시절 가난했고, 재단사였던 아버지가 돌아가신 후 고아가 되었지만 상상력이 풍부했고, 신선한 아이디어를 바탕으로 화려한 쇼를 구성하였다. 몇몇은 프릭쇼라 비난하지만 영국 왕실에까지 알려지게 되고, 그 곳에서 만난 '제니 린드'라는 스웨덴의 오페라 가수를 미국에 소개시켜 큰 성공을 거두게 된다. 전국 투어를 하던 중 명예, 돈이 아닌 가족의 소중함을 깨우치고 돌아가게 된다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 푸터 -->
+  <footer class="text-white text-center sticky-bottom opacity-75" style="font-weight: light; background-color: #FFBAB9;">
+    Web-bootstrap PJT, by 박혜진, 이수경
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
